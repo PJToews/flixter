@@ -3,6 +3,6 @@ class ImagesController < ApplicationController
 
 
   def create
-    @imgae = Image.new
+    @image = Image.new
   end
 end
