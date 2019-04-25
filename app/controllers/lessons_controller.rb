@@ -9,7 +9,7 @@ class LessonsController < ApplicationController
     if current_user.enrolled_in?(course)
       render :show
     else
-      redirect_to course_path(course), alert: 'Please Enroll For The Lesson'
+      redirect_to course_path(course), alert: 'Please enroll for the lesson'
     end
    
   end
