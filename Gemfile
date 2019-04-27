@@ -77,6 +77,7 @@ gem 'stripe'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
 gem "pry-rails"
+gem "font-awesome-rails"
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
