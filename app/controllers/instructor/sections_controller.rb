@@ -52,7 +52,6 @@ class Instructor::SectionsController < ApplicationController
 
 
   helper_method :current_course
-
   def current_course
     if params[:course_id]
       @current_course ||= Course.find(params[:course_id])
@@ -66,5 +65,4 @@ class Instructor::SectionsController < ApplicationController
   def section_params
     params.require(:section).permit(:title, :row_order_position)
   end
-
 end
