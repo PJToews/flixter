@@ -13,14 +13,11 @@ Rails.application.routes.draw do
     resources :sections, only: [:update] do
       resources :lessons, only: [:new, :create]
     end
-    
-    resources :courses, only: [:new, :create, :show] do
-      resources :sections, only: [:new, :create]
-    end
 
     resources :courses, only: [:new, :create, :show] do
-      resources :images, only: [:new, :create]
+      resources :sections, only: [:create]
     end
   end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
